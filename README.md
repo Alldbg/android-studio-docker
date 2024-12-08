@@ -40,7 +40,7 @@ EOF
 
 ---
 
-#Old Doc
+# Old Doc
 ## android-studio-docker [WORK IN PROGRESS]
 
 [![Docker hub version](https://img.shields.io/docker/v/phlummox/android-studio?label=Docker%20Hub)](https://hub.docker.com/r/phlummox/android-studio)
