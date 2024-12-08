@@ -1,3 +1,46 @@
+#Upgrade 
+---
+'''
+# Step 1: Navigate to the Downloads directory
+cd ~/Downloads
+
+# Step 2: Download the latest Android Studio package
+# Visit the official download page to get the latest download link
+# Replace the URL below with the latest one from the official website
+wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2023.1.1.21/android-studio-2023.1.1.21-linux.tar.gz
+
+# Step 3: Extract the downloaded archive
+tar -xzf android-studio-*-linux.tar.gz
+
+# Step 4: Move the extracted folder to /opt/ directory
+sudo mv android-studio /opt/
+
+# Step 5 (Optional): Add Android Studio to your PATH
+echo 'export PATH="$PATH:/opt/android-studio/bin"' >> ~/.bashrc
+source ~/.bashrc
+
+# Step 6 (Optional): Create a desktop entry for Android Studio
+sudo tee /usr/share/applications/android-studio.desktop > /dev/null << EOF
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Android Studio
+Exec="/opt/android-studio/bin/studio.sh" %f
+Icon=/opt/android-studio/bin/studio.svg
+Categories=Development;IDE;
+Terminal=false
+EOF
+
+# Step 7: Launch Android Studio
+/opt/android-studio/bin/studio.sh
+'''
+
+
+
+
+---
+
+#Old Doc
 ## android-studio-docker [WORK IN PROGRESS]
 
 [![Docker hub version](https://img.shields.io/docker/v/phlummox/android-studio?label=Docker%20Hub)](https://hub.docker.com/r/phlummox/android-studio)
