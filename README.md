@@ -1,6 +1,6 @@
 #Upgrade 
 ---
-'''
+```
 # Step 1: Navigate to the Downloads directory
 cd ~/Downloads
 
@@ -33,7 +33,7 @@ EOF
 
 # Step 7: Launch Android Studio
 /opt/android-studio/bin/studio.sh
-'''
+```
 
 
 
